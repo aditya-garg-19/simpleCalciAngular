@@ -1,0 +1,30 @@
+<h1 class="text-center">Simple Calculator</h1>
+
+<div class="container">
+  <div class="row">
+   <input type="text" placeholder="0" value="{{result}}">
+  </div>
+  <div class="row">
+  <div class="key"  name="seven" (click) = "valuePass(7)">7</div>
+  <div class="key"(click) = "valuePass(8)">8</div>
+  <div class="key" (click) = "valuePass(9)">9</div>
+  <div class="key" (click)="clear()">C</div>
+  <hr/>
+</div>
+<div class="row">
+  <div class="key" (click) = "valuePass(4)">4</div>
+  <div class="key" (click) = "valuePass(5)">5</div>
+  <div class="key" (click) = "valuePass(6)">6</div>
+</div>
+<div class="row">
+  <div class="key" (click) = "valuePass(1)">1</div>
+  <div class="key" (click) = "valuePass(2)">2</div>
+  <div class="key" (click) = "valuePass(3)">3</div>
+</div>
+<div class="row">
+    <div class="key" (click) = "add()">+</div>
+    <div class="key" (click)="equals()">=</div>
+    <div class="key">3</div>
+  </div>
+</div>
+
